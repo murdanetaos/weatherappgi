@@ -4,7 +4,7 @@ const forecast = require('./utils/forecast')
 const address = process.argv[2]
 
 if (!address) {
-    console.log('Please provide an address')
+    console.log('http://api.weatherstack.com/current?access_key=53b8ac41023610b71b042cac743be321')
 } else {
     geocode(address, (error, { latitude, longitude, location }) => {
         if (error) {
